@@ -1,0 +1,35 @@
+* printWidth: 单行代码最大长度为 80 个字符
+tabWidth: 使用 2 个空格缩进
+useTabs: 使用空格缩进,而不是制表符
+semi: 在语句末尾添加分号
+singleQuote: 使用单引号代替双引号
+quoteProps: 当对象属性名需要引号时, 仅当必要时添加引号
+jsxSingleQuote: JSX 中使用双引号
+trailingComma: 在可能的地方添加尾随逗号
+bracketSpacing: 在对象文字中添加空格 { foo: bar }
+bracketSameLine: 将 > 多行 JSX 元素放在同一行
+arrowParens: 总是为箭头函数的参数添加括号
+rangeStart/rangeEnd: 仅格式化指定范围内的代码
+parser: 使用 Babel 解析器
+requirePragma/insertPragma: 不需要使用特殊注释
+proseWrap: 保留原有的换行
+htmlWhitespaceSensitivity: 使用 CSS 的空白规则
+endOfLine: 使用 LF 换行符
+embeddedLanguageFormatting: 自动格式化内嵌的代码块 */ierrc/* printWidth: 单行代码最大长度为 80 个字符
+tabWidth: 使用 2 个空格缩进
+useTabs: 使用空格缩进,而不是制表符
+semi: 在语句末尾添加分号
+singleQuote: 使用单引号代替双引号
+quoteProps: 当对象属性名需要引号时, 仅当必要时添加引号
+jsxSingleQuote: JSX 中使用双引号
+trailingComma: 在可能的地方添加尾随逗号
+bracketSpacing: 在对象文字中添加空格 { foo: bar }
+bracketSameLine: 将 > 多行 JSX 元素放在同一行
+arrowParens: 总是为箭头函数的参数添加括号
+rangeStart/rangeEnd: 仅格式化指定范围内的代码
+parser: 使用 Babel 解析器
+requirePragma/insertPragma: 不需要使用特殊注释
+proseWrap: 保留原有的换行
+htmlWhitespaceSensitivity: 使用 CSS 的空白规则
+endOfLine: 使用 LF 换行符
+embeddedLanguageFormatting: 自动格式化内嵌的代码块 */

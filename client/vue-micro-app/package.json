@@ -1,0 +1,31 @@
+{
+  "dependencies": {
+    "@vitejs/plugin-vue": "^5.1.1",
+    "axios": "^1.7.2",
+    "echarts": "^5.5.1",
+    "element-plus": "^2.7.8",
+    "qiankun": "^2.10.16",
+    "vite": "^5.3.5",
+    "vite-plugin-qiankun": "^1.0.15",
+    "vite-plugin-svgr": "^4.2.0",
+    "vue": "^3.4.34",
+    "vue-i18n": "^9.13.1",
+    "vue-router": "^4.4.0",
+    "vuex": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12"
+  },
+  "name": "vue-micro-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "vite serve"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "type": "module"
+}
