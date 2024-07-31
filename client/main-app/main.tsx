@@ -8,13 +8,13 @@ registerMicroApps([
     {
         name: 'react-micro-app', // app name registered
         entry: '//127.0.0.1:3120',
-        container: '#react-micro-app',
-        activeRule: '/yourActiveRule',
+        container: '#react_micro_app',
+        activeRule: '/react-micro-app',
     },
     {
         name: 'vue-micro-app',
         entry: "//localhost:3110",
-        container: '#vue-micro-app',
+        container: '#vue_micro_app',
         activeRule: '/vue-micro-app',
     },
 ]);

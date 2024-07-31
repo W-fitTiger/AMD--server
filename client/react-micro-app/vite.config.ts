@@ -1,22 +1,22 @@
 import { defineConfig, createLogger } from 'vite'
 import path from 'path'
-import vue from '@vitejs/plugin-vue'
+import react from '@vitejs/plugin-react-swc'
 import svgr from 'vite-plugin-svgr'
-import qiankun from "vite-plugin-qiankun"
-import html from "@rollup/plugin-html"
-import legacy from "@vitejs/plugin-legacy"
+// import qiankunServeMiddleware from 'vite-plugin-qiankun';
+// import nodePolyfills from 'rollup-plugin-node-polyfills'
+
+
 const logger = createLogger()
 
 const root = path.resolve(__dirname)
 
 const backendUrl = process.env.BACKEND_URL
 
-
 export default defineConfig({
     base: "/",
     //   mode:"development",
     // define:{},
-    plugins: [vue(), svgr(),qiankun("vue_micro_app",{useDevMode:true})],
+    plugins: [react(), svgr(),],
     publicDir: "dist",
     //   cacheDir:"",
     resolve: {
@@ -25,20 +25,17 @@ export default defineConfig({
             '@': path.resolve(root, './src')
 
         },
-        extensions: ['.vue', '.ts', '.js', '.json', ".less", ".css"],
+        extensions: ['.tsx', ".jsx", '.ts', '.js', '.json', ".less", ".css"]
     },
     server: {
-        port: 3110,
+        port: 3120,
         host: '127.0.0.1',
-        headers: {
-            'Access-Control-Allow-Origin': '*',
-        },
         cors: {
             credentials: true
         },
         proxy: {
             '/api': {
-                target: "http://100.81.77.234:3000",
+                target: backendUrl,
                 changeOrigin: true
             }
         }
@@ -54,12 +51,13 @@ export default defineConfig({
         target: "esnext",
         lib: {
             entry: './index.html',
-            name: 'vue-micro-app',
+            name: 'react-micro-app',
             formats: ['umd']
         }
+       
 
     },
-    define: {
+    define:{
         "process.env": {}
     },
     customLogger: logger,

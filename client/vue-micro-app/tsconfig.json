@@ -1,17 +1,18 @@
 {
     "compilerOptions": {
-        "jsx": "react",
-        "target": "es6",
-        "module": "commonjs",
+        "target": "esnext",
         "useDefineForClassFields": true,
-        "lib": [
-            "DOM",
-            "DOM.Iterable",
-            "ESNext"
-        ],
-        "outDir": "dist",
+        "module": "esnext",
+        "moduleResolution": "node",
         "strict": true,
-        "esModuleInterop": true
+        "jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "isolatedModules": true,
+        "esModuleInterop": true,
+        "lib": ["esnext", "dom"],
+        "skipLibCheck": true,
+        "allowSyntheticDefaultImports":true
     },
     "include": [
         "src/**/*"

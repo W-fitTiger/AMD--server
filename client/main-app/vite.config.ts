@@ -3,7 +3,7 @@ import path from 'path'
 import react from '@vitejs/plugin-react-swc'
 import svgr from 'vite-plugin-svgr'
 import qiankunServeMiddleware from 'vite-plugin-qiankun';
-
+import nodePolyfills from 'rollup-plugin-node-polyfills'
 
 
 const logger = createLogger()
@@ -53,7 +53,16 @@ export default defineConfig({
         assetsDir: 'assets',
         minify: 'esbuild',
         modulePreload: true,
+        rollupOptions: {
+            plugins: [
+              // 添加 node polyfills 插件
+              nodePolyfills()
+            ]
+          }
 
+    },
+    define:{
+        "process.env": {}
     },
     customLogger: logger,
     esbuild: {
